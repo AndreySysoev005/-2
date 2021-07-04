@@ -1,0 +1,46 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	System.out.print("Введите целое число ");
+	Scanner scan = new Scanner(System.in);
+	int a = (int) scan.nextLong();
+		if (a==0) {
+			System.out.print("Неположительное и не отрицательное, однозначное ");
+		} else if (a>0) {
+			int b = (int)Math.log10(a)+1;
+				switch(b) {
+					case 1 : System.out.println("Положительное, однозначное");
+						break;
+					case 2 : System.out.println("Положительное, двузначное");
+						break;
+					case 3 : System.out.println("Положительное, трехзначное");
+						break;
+					case 4 : System.out.println("Положительное, четырехначное");
+						break;
+					case 5 : System.out.println("Положительное, пятизначное");
+						break;
+					case 6 : System.out.println("Положительное, шестизначное");
+				}
+				} else {
+
+				int b = (int)Math.log10(Math.abs(a))+1;
+					switch(b) {
+						case 1 : System.out.println("Отрицательное, однозначное");
+							break;
+						case 2 : System.out.println("Отрицательное, двузначное");
+							break;
+						case 3 : System.out.println("Отрицательное, трехзначное");
+							break;
+						case 4 : System.out.println("Отрицательное, четырехначное");
+							break;
+						case 5 : System.out.println("Отрицательное, пятизначное");
+							break;
+						case 6 : System.out.println("Отрицательное, шестизначное");
+					}
+				}
+    }
+}
