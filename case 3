@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.print("Введите целое число ");
+        Scanner scan = new Scanner(System.in);
+        int a = (int) scan.nextLong();
+        if (a == 0) {
+            a = 10;
+            System.out.print(+a);
+        } else if (a > 0) {
+            a += 1;
+            System.out.print(+a);
+        } else {
+            a -= 2;
+            System.out.print(+a);
+        }
+    }
+}
