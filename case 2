@@ -1,0 +1,31 @@
+/*2) Треугольник существует только тогда, когда сумма любых двух его сторон
+больше третьей. Определить существует ли такой треугольник. Дано: a, b, c –
+стороны предполагаемого треугольника. Требуется сравнить длину каждого
+отрезка-стороны с суммой двух других. Если хотя бы в одном случае отрезок
+окажется больше суммы двух других, то треугольника с такими сторонами не
+Существует.
+     */
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	System.out.print("Введите сторону а ");
+        Scanner scan = new Scanner(System.in);
+        int a = (int) scan.nextLong();
+        System.out.print("Введите сторону в ");
+        Scanner scan1 = new Scanner(System.in);
+        int b = (int) scan.nextLong();
+        System.out.print("Введите сторону с ");
+        Scanner scan2 = new Scanner(System.in);
+        int c = (int) scan.nextLong();
+        if (a>b+c | b>a+c | c>a+b) {
+            System.out.println("Треугольник не существует");
+        }
+        else {
+            System.out.println("Треугольник существует");
+        }
+    }
+}
