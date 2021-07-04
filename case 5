@@ -1,0 +1,35 @@
+// 5) Даны 3 целых числа. Найти количество положительных и отрицательных чисел в исходном наборе
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+   System.out.println("Введите 3 целых числа ");
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        int c = scan.nextInt();
+        int x =0;
+        int y =0;
+            if (a>0) {
+                x++;
+            } else {
+                y++;
+            }
+        if (b>0) {
+            x++;
+        } else {
+            y++;
+        }
+        if (c>0) {
+            x++;
+        } else {
+            y++;
+        }
+        System.out.println("Кол-во положительных чисел " + x);
+        System.out.println("Кол-во отрицательных чисел " + y);
+   }
+}
