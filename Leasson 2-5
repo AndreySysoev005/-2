@@ -1,0 +1,15 @@
+/*5)Напишите программу печати таблицы перевода расстояний из дюймов в
+сантиметры для значений длин от 1 до 20 дюймов. 1 дюйм = 2,54 см
+ */
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+		for (int dm=1; dm<=20; dm++) {
+		    double sm=dm*2.54;
+		    System.out.println("дюймы "+dm+" сантиметры "+sm);
+
+    }
+    }
+}
